@@ -3,7 +3,6 @@ rootProject.name = 'spring-ldap'
 include 'core'
 include 'core-tiger'
 include 'test-support'
-include 'test-support-unboundid'
 include 'ldif/ldif-batch'
 include 'ldif/ldif-core'
 include 'odm'
@@ -30,7 +29,7 @@ rootProject.children.each { p->
 }
 
 findProject(":spring-ldap-test-support").name = "spring-ldap-test"
-findProject(":spring-ldap-test-support-unboundid").name = "spring-ldap-test-unboundid"
+findProject(":spring-ldap-test-support-apacheds2").name = "spring-ldap-test-apacheds2"
 
 // Exposes gradle buildSrc for IDE support
 include "buildSrc"
